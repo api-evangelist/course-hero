@@ -1,8 +1,29 @@
 aid: course-hero
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/course-hero.png
 name: Course Hero
-description: 'Course Hero is a company surfaced as a portfolio company of d1-capital, sierra-ventures,
-  sv-angel and added to the API Evangelist network as a stub for enrichment. Sector: edtech. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  Course Hero is an online learning platform where students and educators access
+  more than 25 million course-specific study resources — practice problems, study
+  guides, class notes, step-by-step explanations, essays, and lab reports —
+  alongside 24/7 tutoring and AI-assisted study tools. Founded in 2006 by Andrew
+  Grauer at Cornell University and headquartered in Redwood City, California,
+  Course Hero is part of Learneo, a family of learning and productivity brands that
+  also includes QuillBot, Symbolab, LitCharts, CliffsNotes, Scribbr, Bartleby, and
+  LanguageTool. Course Hero exposes only internal, undocumented web APIs (under
+  /api/) that power its consumer web and mobile apps; it publishes no public
+  developer program, OpenAPI specification, SDKs, or partner API. This profile was
+  surfaced as a portfolio company of D1 Capital, Sierra Ventures, and SV Angel.
 url: https://raw.githubusercontent.com/api-evangelist/course-hero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Edtech
+- Education
+- Learning
+- Study Resources
+- Tutoring
+- AI
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -27,3 +54,18 @@ maintainers:
 common:
 - type: Website
   url: https://www.coursehero.com
+- type: GitHubOrganization
+  url: https://github.com/coursehero
+- type: Support
+  url: https://support.coursehero.com
+- type: TermsOfService
+  url: https://www.coursehero.com/tos/
+- type: PrivacyPolicy
+  url: https://www.coursehero.com/privacy/
+- type: DomainSecurity
+  url: security/course-hero-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

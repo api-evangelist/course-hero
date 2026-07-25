@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.coursehero.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  8 21:53:12 2026 GMT
+  hsts: null
+domains:
+- domain: coursehero.com
+  dnssec: false
+  caa:
+  - 0 issuewild "pki.goog; cansignhttpexchanges=yes"
+  - 0 issuewild "ssl.com"
+  - 0 issue "amazontrust.com"
+  - 0 issue "comodoca.com"
+  - 0 issue "digicert.com; cansignhttpexchanges=yes"
+  - 0 issue "globalsign.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
